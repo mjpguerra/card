@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="H,1.7:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="@color/transparent"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="@dimen/margin10"
+                app:cardPreventCornerOverlap="true">
+
+
+            <RelativeLayout
+                    android:id="@+id/bgCard"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/bg_gradient_physic_card"
+                    android:layout_height="match_parent">
+
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:clipToPadding="true"
+                        android:layout_margin="16dp">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+
+                            <com.facebook.shimmer.ShimmerFrameLayout
+                                    android:id="@+id/shimmer_view_container"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:animateLayoutChanges="true"
+                                    app:shimmer_auto_start="false"
+                                    tools:visibility="gone">
+                                <!--162dp-->
+
+
+                                <TextView
+                                        android:id="@+id/shimmerTv"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/titillium_web_bold"
+                                        android:text="@string/loading_your_currency"
+                                        android:textAlignment="center"
+                                        android:textSize="@dimen/margin16"/>
+
+                            </com.facebook.shimmer.ShimmerFrameLayout>
+
+                            <LinearLayout
+                                    android:id="@+id/shimmerContent"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:animateLayoutChanges="true"
+                                    android:orientation="vertical"
+                                    android:visibility="gone"
+                                    tools:visibility="visible">
+
+                                <TextView
+                                        android:id="@+id/llBallance"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="34dp"
+                                        android:text="R$ 00,00"
+                                        android:gravity="center"
+                                        android:visibility="visible"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold"/>
+
+                                <TextView
+                                        android:id="@+id/tvHideBallance"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="16sp"
+                                        android:fontFamily="@font/titillium_web_bold"
+                                        android:text="@string/hide_balance"
+                                        android:textColor="@android:color/white"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <View
+                                android:id="@+id/space1"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"/>
+
+                        <TextView
+                                android:id="@+id/tvCardType"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/stroke_white_transparent"
+                                android:fontFamily="@font/titillium_web_bold"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:text="CARTÃO ADICIONAL"
+                                android:textAlignment="center"
+                                android:textSize="10sp"/>
+
+
+                    </LinearLayout>
+
+                    <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/dots1"
+                                style="@style/TextNumberOfCard"/>
+
+                        <Space
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"/>
+
+                        <TextView
+                                android:id="@+id/dots2"
+                                style="@style/TextNumberOfCard"/>
+
+                        <Space
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"/>
+
+                        <TextView
+                                android:id="@+id/dots3"
+                                style="@style/TextNumberOfCard"/>
+
+                        <Space
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"/>
+
+                        <TextView
+                                android:id="@+id/tvLastNumber"
+                                style="@style/TextNumberOfCard"
+                                android:fontFamily="@font/titillium_web_regular"
+                                android:text="0000"/>
+
+                    </LinearLayout>
+
+                    <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="bottom"
+                            android:orientation="horizontal">
+
+                        <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                            <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                <TextView
+                                        android:id="@+id/tvValid"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="@string/valid_thru"
+                                        android:textSize="8sp"/>
+
+                                <TextView
+                                        android:id="@+id/tvValidation"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="16dp"
+                                        android:layout_marginLeft="16dp"
+                                        android:fontFamily="@font/titillium_web_regular"
+                                        android:text="00/00"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                    android:id="@+id/tvNameUser"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/titillium_web_regular"
+                                    android:text=""/>
+
+                        </LinearLayout>
+
+                        <Space
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"/>
+
+                        <ImageView
+                                android:id="@+id/ivFlag"
+                                android:layout_width="60dp"
+                                android:layout_height="36dp"
+                                android:layout_gravity="bottom"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/ic_mastercard"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                        android:id="@+id/rlBlocked"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white_transparent"
+                        android:gravity="center">
+
+
+                    <ImageView
+                            android:id="@+id/iv"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_lock"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/iv"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/titillium_web_bold"
+                            android:text="@string/cards_card_bloqued"
+                            android:textColor="@color/colorPrimaryDark"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

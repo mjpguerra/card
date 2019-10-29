@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Password Component-->
+    <declare-styleable name="password_component_custom">
+        <attr name="text_central" format="string" />
+        <attr name="quantity" format="reference" />
+        <attr name="textColor_central" format="color" />
+        <attr name="component_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="Bottom_navigation_view_custom">
+        <attr name="item_selected" format="reference" />
+    </declare-styleable>
+
+    <item name="nameScreenTag" type="id" />
+    <item name="nameCategory" type="id" />
+    <item name="nameLabel" type="id" />
+
+    <declare-styleable name="ChipView">
+        <attr name="chip_spacing" format="dimension" />
+        <attr name="chip_line_spacing" format="dimension" />
+        <attr name="chip_padding" format="dimension" />
+        <attr name="chip_side_padding" format="dimension" />
+        <attr name="chip_corner_radius" format="dimension" />
+        <attr name="chip_background" format="reference" />
+        <attr name="chip_background_selected" format="reference" />
+        <attr name="chip_background_res" format="reference" />
+    </declare-styleable>
+
+</resources>

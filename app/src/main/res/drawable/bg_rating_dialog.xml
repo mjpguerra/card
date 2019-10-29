@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Created by Mateus Pinheiro on 5/16/19 1:53 PM
+  ~  * Copyright (c) 2019. All rights reserved.
+  ~  * Last modified 5/16/19 1:53 PM
+  ~  */
+  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape>
+            <corners android:radius="20dp"/>
+            <gradient
+                android:angle="45"
+                android:startColor="@color/rating_dialog_start_color"
+                android:centerColor="@color/rating_dialog_center_color"
+                android:endColor="@color/rating_dialog_end_color"
+                android:type="linear"
+                />
+        </shape>
+    </item>
+
+</selector>

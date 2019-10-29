@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--must be equal-->
+    <integer name="pin_quantity">4</integer>
+    <string name="pin_quantity_string">4</string>
+
+
+    <string name="button_behavior" translatable="true">android.support.design.widget.FloatingActionButton</string>
+
+
+
+</resources>

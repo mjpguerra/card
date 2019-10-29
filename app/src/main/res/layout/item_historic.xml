@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   xmlns:tools="http://schemas.android.com/tools"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:layout_marginLeft="5dp"
+                                   android:layout_marginTop="10dp"
+                                   android:layout_marginRight="5dp"
+                                   android:background="@color/white"
+                                   app:elevation="1dp"
+                                   app:cardCornerRadius="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/ivIcon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/margin16"
+                app:srcCompat="@drawable/ic_prov_dark" />
+
+            <!--Center-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvDescription"
+                    style="@style/TextTitleItemMenu"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:singleLine="true"
+                    tools:text="Transferência recebida" />
+
+                <TextView
+                    android:id="@+id/tvSource"
+                    style="@style/TextItemDescription"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:singleLine="true"
+                    android:textColor="@color/gray"
+                    tools:text="via Agência Santander" />
+
+            </LinearLayout>
+
+            <!--Right-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvValue"
+                    style="@style/TextTitleItem"
+                    android:fontFamily="@font/titillium_web_bold"
+                    android:layout_width="match_parent"
+                    android:gravity="end"
+                    tools:text="R$ 130,00" />
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    style="@style/TextTitleItem"
+                    android:layout_width="match_parent"
+                    android:gravity="end"
+                    tools:text="02 maio" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivTransaactionType"
+                android:layout_width="15dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:src="@drawable/ic_in" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

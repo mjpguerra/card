@@ -1,0 +1,134 @@
+<resources>
+    <string name="app_name">Super Cartões</string>
+
+    <string name="type_tel">Informe o número do seu celular</string>
+    <string name="type_number_card">Informe o número do cartão</string>
+    <string name="type_password">Informe a senha do cartão</string>
+    <string name="title_login"><b>Bem vindo ao</b>\n Super Cartões</string>
+    <string name="title_login3">Super Cartões</string>
+    <string name="title_login2"> Insira abaixo seu número de celular\n para começar a consultar o saldo do\n seu cartão Superdigital.</string>
+    <string name="todo">TODO</string>
+    <string name="log_in_2">ENTRAR</string>
+    <string name="fintech">uma fintech</string>
+    <string name="type_sms_code">Digite o código de validação que você\n recebeu por sms</string>
+    <string name="type_resend_code">Reenviar código</string>
+    <string name="cancel">Cancelar</string>
+    <string name="no">Não</string>
+    <string name="yes">Sim</string>
+    <string name="dialog_exit_message">Você tem certeza que deseja sair?</string>
+
+    <string name="currency_val">%1$s %2$s</string>
+    <string name="send">Enviar</string>
+
+    <string name="key">superdigital20192019</string>
+    <string name="iv">20192019superdigital</string>
+
+    <string name="title_activity_login">Superdigital</string>
+
+    <string name="remember_data">Lembrar meus dados</string>
+
+    <string name="toolbar_logo_invisible">Logo invisível na toolbar</string>
+    <string name="valid_thru">VALID THRU</string>
+    <string name="cards_card_bloqued">Cartão bloqueado</string>
+    <string name="digits_card">****</string>
+    <string name="search_payments">Encontre seus comprovantes…</string>
+    <string name="no_historic_title">Ops, nenhuma transação\nfoi encontrada</string>
+    <string name="no_historic_subtitle"></string>
+    <string name="no_result_query">Resutados de pesquisa para <b>\"%1$s\"</b></string>
+    <string name="no_result_title">Ops, nenhuma transação\nfoi encontrada</string>
+    <string name="no_result_subtitle">Confira as palavras que você\ndigitou ou pesquise novamente\nusando outras palavras</string>
+
+
+    <string name="historic_tag_card">Compras</string>
+    <string name="historic_tag_exchange">Câmbio</string>
+    <string name="historic_tag_deposit">Depósito</string>
+    <string name="historic_tag_payment">Pagamento</string>
+    <string name="historic_tag_phone_reload">Recarga Telefônica</string>
+    <string name="historic_tag_reload">Recarga</string>
+    <string name="historic_tag_transfer">Transferência</string>
+    <string name="historic_tag_transport">Transporte</string>
+    <string name="historic_tag_cash_out">Saque</string>
+    <string name="title_white"></string>
+
+    <string name="payments">Pagamentos</string>
+    <string name="others">Outros</string>
+    <string name="hide_balance">Ocultar saldo</string>
+    <string name="show_balance">Mostrar saldo</string>
+    <string name="loading_your_currency">Carregando seu saldo...</string>
+    <string name="sms_code_error">Código inválido.</string>
+    <string name="phone_error">Número de celular inválido.</string>
+    <string name="deposit_redirect">Estamos direcionando você\npara site do seu banco</string>
+    <string name="validating_phone">Validando Celular</string>
+    <string name="generic_error2">Ops, houve algum erro, tente novamente mais tarde</string>
+
+    <string name="attention">Atenção</string>
+
+    <string name="remember_cpf_dialog">Ao desabilitar a opção "Lembrar meus dados", limparemos o número do cartão. Deseja continuar?</string>
+    <string name="token_pass">Informe a senha do seu cartão</string>
+    <string name="password_isempty">Você precisa digitar uma senha</string>
+    <string name="password_small">Você precisa digitar uma senha com %1$s caracteres</string>
+    <string name="validating_data">Validando dados</string>
+    <string name="validating_token">Validando token</string>
+    <string name="quantity_password_chars_six">6</string>
+    <string name="quantity_password_chars_four">4</string>
+    <string name="virtual_card">CARTÃO VIRTUAL</string>
+    <string name="main_card">CARTÃO TITULAR</string>
+    <string name="additional_card">CARTÃO ADICIONAL</string>
+
+    <string name="fingerprint_not_recognized">Biometria não reconhecida. Tente novamente.</string>
+    <string name="fingerprint_recognized">Biometria reconhecida.</string>
+    <string name="sign_In">Login</string>
+    <string name="touch_sensor">Toque no sensor do seu dispositivo.</string>
+    <string name="enter_finger_print"><u>Entrar com a biometria</u></string>
+    <string name="question_use_fingerprint">Você quer usar a biometria cadastrada no seu dispositivio para fazer login?</string>
+    <string name="touch_id">Touch ID</string>
+
+    <string name="loading_transactions">Carregando transações</string>
+    <string name="receipt_not_found">Não encontramos este comprovante</string>
+    <string name="fetching_receipt">Buscando comprovante</string>
+    <string name="transaction_no_receipt">Esta transação não gerou comprovante</string>
+    <string name="identification">Identificação</string>
+    <string name="barcode">Código de barras</string>
+    <string name="discount">Desconto</string>
+
+    <string name="transaction_title">Detalhe da Transação</string>
+    <string name="transaction_id">Identificação</string>
+    <string name="transaction_date">Data da transação</string>
+    <string name="transaction_card">Cartão</string>
+    <string name="transaction_card_holder">Titular do cartão</string>
+    <string name="transaction_value">Valor final</string>
+    <string name="transaction_share">COMPARTILHAR COMPROVANTE</string>
+
+    <string name="bank">Banco</string>
+    <string name="agency">Agência</string>
+    <string name="account">Conta</string>
+    <string name="authentication">Autenticação</string>
+
+
+    <string name="account_type">Tipo de conta</string>
+    <string name="transferred_to">Transferido para</string>
+    <string name="cnpj">CNPJ</string>
+    <string name="cpf">CPF</string>
+    <string name="no_tax">Isento</string>
+    <string name="tax">Tarifa</string>
+    <string name="transfered_by">Transferido por</string>
+    <string name="card">Cartão</string>
+
+    <string name="phone">Telefone</string>
+    <string name="made_by">Realizada por</string>
+    <string name="coin_origin">Moeda de origem</string>
+    <string name="coin_destiny">Moeda de destino</string>
+    <string name="operator">Operadora</string>
+    <string name="dolar_value">Valor em Dólar</string>
+    <string name="usd">USD</string>
+    <string name="price">Cotação</string>
+    <string name="exchange_rate">Taxa de câmbio</string>
+    <string name="receiver">Destinatário</string>
+    <string name="ticket_number">Número do bilhete</string>
+    <string name="holder">Portador</string>
+    <string name="permission_write">Atenção! A permissão de armazenamento é necessária para poder compartilhar seu comprovante</string>
+    <string name="active">Ativar</string>
+
+
+
+</resources>

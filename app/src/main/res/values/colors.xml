@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5400A2</color>
+    <color name="colorPrimaryDark">#5400A2</color>
+    <color name="colorAccent">#7F198C</color>
+    <color name="colorAccent2">#d094d7</color>
+
+    <color name="colorPrimaryDarkInactive">#7C559E</color>
+
+
+    <!-- Colors gradient bg app -->
+    <!--<color name="colorBgDefaultStart">#1F0070</color>-->
+    <color name="colorBgDefaultStart">#5400A2</color>
+    <color name="colorBgDefaultCenter">#7c128b</color>
+    <!--<color name="colorBgDefaultEnd">#df01fc</color>-->
+    <color name="colorBgDefaultEnd">#B715E3</color>
+
+    <color name="colorBgDefaultStepOne">#3B008A</color>
+    <color name="colorBgDefaultStepTwo">#40008F</color>
+    <color name="colorHintRegister">#53df01fc</color>
+    <color name="colorTextThemeButtonTransp">#cadef4</color>
+    <color name="colorLineDivide">#D4D4D4</color>
+
+    <color name="white_label_transparent">#99ffffff</color>
+    <color name="white_label_transparent50">#80ffffff</color>
+    <color name="white_label_transparent60">#99ffffff</color>
+    <color name="white_label_transparent70">#B3ffffff</color>
+    <color name="white_label_transparent80">#CCffffff</color>
+
+    <color name="gray">#575757</color>
+    <color name="gray_light">#b2b2b2</color>
+    <color name="grey_button">#BEBEBE</color>
+    <color name="grey_bg_bottom">#F1F1F1</color>
+    <color name="checkedBottomNavItem">#EC0000</color>
+    <color name="black_camera_surface">#bd000000</color>
+    <color name="grey_line_recycle">#E9E9E9</color>
+    <color name="bg_black_camera">#38000000</color>
+    <color name="colorStartSummer">#FFB147</color>
+    <color name="colorCenterSummer">#FF4377</color>
+    <color name="colorEndSummer">#B402B1</color>
+    <color name="black">#000000</color>
+    <color name="black2">#333333</color>
+
+    <color name="ball_yellow">#FFF47A</color>
+    <color name="ball_blue">#C7FFF2</color>
+    <color name="white">#FFFFFF</color>
+    <color name="botombar_grey">#3D3D3D</color>
+
+    <color name="black_transparent">#D7000000</color>
+    <color name="white_transparent">#E6ffffff</color>
+    <color name="white_transparent_light">#88ffffff</color>
+    <color name="grey_transparent">#80575757</color>
+    <color name="grey_value">#FBFBFB</color>
+
+    <color name="md_red_A700">#D50000</color>
+    <color name="gradient_bg_orange_start">#9012c8</color>
+    <color name="gradient_bg_orange_center">#e5716f</color>
+    <color name="gradient_bg_orange_end">#ef9462</color>
+    <color name="transparent">#00ffffff</color>
+
+    <color name="transfer_header_item_line">#44ff0000</color>
+    <color name="transfer_contact_item_circle">#efefef</color>
+
+    <color name="orange">#FF6D00</color>
+    <color name="green_fab">#50E3C2</color>
+    <color name="gray_clean">#C0BCBC</color>
+    <color name="black_transparent_bottonsheet">#2C000000</color>
+
+    <color name="warning_color">#F44336</color>
+    <color name="hint_color">#000000</color>
+    <color name="success_color">#4CAF50</color>
+
+    <!-- ChatBot-->
+    <color name="fabIconColor">@color/white</color>
+    <color name="fabBackgroundColor">#703B08</color>
+    <color name="fabOnlineColor">@android:color/holo_green_dark</color>
+    <color name="fabOfflineColor">@android:color/holo_red_light</color>
+
+    <color name="toolbarColor">#6a2bad</color>
+    <color name="toolbarTextColor">@color/white</color>
+    <color name="toolbarArrowColor">@color/white</color>
+    <color name="offlineLabelBackgroundColor">@android:color/holo_red_light</color>
+    <color name="offlineLabelTextColor">@color/white</color>
+    <color name="chatBackgroundColor">@color/white</color>
+    <color name="colorSendButton">#6a2bad</color>
+    <color name="colorFileButton">#6a2bad</color>
+
+    <color name="colorSender">#F1F1F1</color>
+    <color name="colorTextSender">@color/black</color>
+    <color name="colorTextSenderName">@color/black</color>
+
+    <color name="colorReceiver">#E9DDF0</color>
+    <color name="colorTextReceiver">@color/black</color>
+    <color name="colorTextReceiverName">@color/black</color>
+
+    <color name="colorDateText">@android:color/darker_gray</color>
+    <color name="messageBackgroundColor">@color/white</color>
+    <color name="messageStrokeColor">@color/white</color>
+    <color name="messageEditTextBackgroundColor">@color/white</color>
+    <color name="messageEditTextColor">@android:color/darker_gray</color>
+
+    <color name="botChatMessageBorderColor">#E9DDF0</color>
+    <color name="userChatMessageBorderColor">#F1F1F1</color>
+
+    <color name="reciptCardBackground">@color/black</color>
+    <color name="reciptLightText">@color/gray_light</color>
+    <color name="reciptStrongText">@color/gray_light</color>
+    <color name="reciptTitle">@color/gray_light</color>
+    <color name="reciptSubTitle">@color/gray_light</color>
+
+    <color name="reciptDetailBackground">@color/black</color>
+    <color name="reciptDetailSellerName">@color/gray_light</color>
+    <color name="reciptDetailBtnMore">@color/gray_light</color>
+    <color name="reciptDetailItemTitle">@color/gray_light</color>
+    <color name="reciptDetailItemSubTitle">@color/gray_light</color>
+
+    <color name="genericCardBackground">@color/white</color>
+    <color name="genericTitle">@color/gray_light</color>
+    <color name="genericSubTitle">@color/gray_light</color>
+    <color name="genericButtons">@color/gray_light</color>
+
+    <color name="listTitle">@color/black</color>
+    <color name="listSubTitle">@color/gray_light</color>
+    <color name="listButton">@color/gray_light</color>
+    <color name="listBackground">@color/white</color>
+    <color name="colorBtnBorder">@color/gray_light</color>
+
+    <!--notification color-->
+    <color name="colorSmallIconNotification">#607D8B</color>
+
+    <color name="ticketValueColor">#33DBB4</color>
+
+    <color name="backgroundDialogDeposit">#E63D3D3D</color>
+    <color name="colorTextDialogDeposit">#BEBEBE</color>
+
+    <color name="progressBarStart">#D447A5</color>
+    <color name="progressBarEnd">#F3A866</color>
+
+
+    <color name="red">@android:color/holo_red_dark</color>
+
+
+    <color name="chip_background">#BDBDBD</color>
+    <color name="chip_background_selected">#9E9E9E</color>
+
+    <color name="rating_dialog_end_color">#F7BE52</color>
+    <color name="rating_dialog_center_color">#C34B74</color>
+    <color name="rating_dialog_start_color">#AB1787</color>
+
+</resources>

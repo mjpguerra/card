@@ -1,0 +1,159 @@
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/swipe_layout">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+
+            android:id="@+id/parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true"
+            tools:context=".ui.activities.LoginActivity">
+
+        <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/ablCollapse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:background="@null"
+                android:fitsSystemWindows="true"
+                android:theme="@style/AppTheme.AppBarOverlay"
+                app:elevation="0dp">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                    android:id="@+id/clCollapsing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    app:collapsedTitleGravity="center_horizontal"
+                    app:collapsedTitleTextAppearance="@style/CollapsedText"
+                    app:contentScrim="@color/colorPrimaryDark"
+                    app:elevation="0dp"
+                    app:expandedTitleGravity="center_horizontal|bottom"
+                    app:expandedTitleMarginBottom="155dp"
+                    app:expandedTitleTextAppearance="@style/ExpandedText"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+
+                <LinearLayout
+                        android:id="@+id/cl"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:animateLayoutChanges="true"
+                        android:orientation="vertical"
+                        android:paddingBottom="35dp"
+                        android:background="@drawable/bg_gradient_app"
+                        app:layout_collapseMode="parallax">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:clipToPadding="false"
+                            android:overScrollMode="never"
+                            android:layout_gravity="center"
+                            android:animateLayoutChanges="true"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="@dimen/margin35"
+                            android:layout_marginRight="@dimen/margin30"
+                            android:layout_marginTop="@dimen/margin25"
+                            android:layout_marginStart="@dimen/margin35"
+                            android:layout_marginEnd="@dimen/margin30"
+                            tools:visibility="visible">
+
+                        <include layout="@layout/it_adapter_card_constraint"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="@android:color/transparent"
+                        app:contentInsetStart="0dp"
+                        app:layout_collapseMode="pin"
+                        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                    <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:background="@color/transparent">
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:contentDescription="@string/toolbar_logo_invisible"
+                                android:src="@drawable/nav_icon"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:background="@color/transparent"
+                            android:visibility="invisible">
+
+                        <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:contentDescription="@string/toolbar_logo_invisible"
+                                android:src="@drawable/nav_icon"/>
+
+                    </RelativeLayout>
+
+
+                </androidx.appcompat.widget.Toolbar>
+
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <!--####### Bottom Sheet #######-->
+        <include layout="@layout/bottom_sheet_home"/>
+
+
+        <androidx.cardview.widget.CardView
+                android:id="@+id/cvSearch"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+                app:layout_anchor="@id/ablCollapse"
+                app:layout_anchorGravity="bottom|center"
+                app:layout_scrollFlags="exitUntilCollapsed"
+                app:cardPreventCornerOverlap="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+            <LinearLayout
+                    android:id="@+id/llSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                <androidx.appcompat.widget.SearchView
+                        android:id="@+id/svSearch"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:theme="@style/SearchViewStyle"
+                        app:iconifiedByDefault="false"
+                        app:queryHint="@string/search_payments"
+                        app:searchIcon="@drawable/ic_magnifier"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
